@@ -1,0 +1,26 @@
+.navigation_panel {
+    div.search {
+        display: inline-block;
+        padding-left: 10px;
+        position: relative;
+
+        input[type="text"] {
+            padding: 6px;
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            right: 40px;
+        }
+        button {
+            padding: 5px 10px;
+            font-size: 16px;
+            color: #84939e;
+            background-color: transparent;
+            border-color: transparent;
+            outline: transparent;
+        }
+    }
+    .search-input {
+        display: none;
+    }
+}

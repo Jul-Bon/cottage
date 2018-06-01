@@ -1,0 +1,136 @@
+.info {
+    background-color: $darker-footer-color;
+    padding: 45px 0;
+}
+
+.site-footer {
+    color: $main-light-color;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    @media screen and(min-width: 767px) {
+        text-align: left;
+    }
+
+    p, span {
+        opacity: 0.5;
+    }
+    h6 {
+        font-size: 14px;
+        opacity: 0.7;
+        font-weight: 600;
+        margin: 0 0 16px 0;
+    }
+}
+
+.footer_logo {
+    margin-bottom: 20px;
+}
+
+.footer_description {
+    margin-bottom: 30px;
+    text-align: justify;
+    @media screen and(min-width: 767px) {
+        float: left;
+        max-width: 360px;
+        margin-right: 30px;
+        text-align: left;
+    }
+    @media screen and(min-width: 1119px) {
+        margin-right: 50px;
+    }
+}
+
+.footer_phone {
+    margin-bottom: 30px;
+    @media screen and(min-width: 380px) {
+        float: left;
+        margin-right: 20px;
+    }
+    @media screen and(min-width: 767px) {
+        margin-right: 20px;
+    }
+    @media screen and(min-width: 991px) {
+        margin-right: 30px;
+    }
+    @media screen and(min-width: 1119px) {
+        float: left;
+        margin: 0 50px;
+    }
+}
+
+.footer_address {
+    margin-bottom: 30px;
+    @media screen and(min-width: 380px) {
+        float: right;
+    }
+
+    @media screen and(min-width: 500px) {
+        float: left;
+        margin-right: 20px;
+    }
+
+    @media screen and(min-width: 767px) {
+        float: left;
+        margin-right: 0;
+    }
+    @media screen and(min-width: 991px) {
+        margin-right: 30px;
+    }
+
+    @media screen and(min-width: 1119px) {
+        float: left;
+        margin: 0 60px;
+    }
+
+    a.view_map {
+        display: block;
+        text-decoration: underline;
+        opacity: 0.5;
+        color: $main-light-color;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $accent-color;
+        }
+    }
+}
+
+.copyright {
+    padding: 22px 0;
+    background-color: $lighter-footer-color;
+    @media screen and(min-width: 767px) {
+        text-align: inherit;
+    }
+}
+
+.social_menu {
+    @media screen and(min-width: 767px) {
+        float: right;
+    }
+    .menu {
+        @include list-reset;
+        li {
+            display: inline-block;
+            position: relative;
+            opacity: 0.5;
+            &:before {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $main-light-color;
+            }
+            &:hover {
+                cursor: pointer;
+                opacity: 0.8;
+            }
+        }
+        a {
+            @include link;
+            text-indent: -9999px;
+            padding: 5px 15px;
+
+        }
+    }
+}

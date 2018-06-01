@@ -1,0 +1,238 @@
+body {
+    font-family: $main-font;
+    font-weight: 400;
+}
+
+.nav-link {
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.main_banner {
+    .site_title {
+        color: $main-light-color;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        @media screen and(min-width: 320px) {
+            font-size: 28px;
+            line-height: 40px;
+        }
+        @media screen and(min-width: 767px) {
+            font-size: 36px;
+            line-height: 44px;
+        }
+        @media screen and(min-width: 991px) {
+            font-size: 45px;
+            line-height: 54px;
+        }
+
+    }
+    .site_description {
+        color: $main-light-color;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 28px;
+        @media screen and(min-width: 320px) {
+            font-size: 16px;
+        }
+
+        @media screen and(min-width: 767px) {
+            font-size: 18px;
+        }
+    }
+}
+
+.company_description {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.headline {
+    text-align: center;
+    h2 {
+        color: $header-color;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 28px;
+    }
+    p {
+        color: $text-color;
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+section {
+    h3 {
+        color: $header-color;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+    p, span {
+        color: $text-color;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+/*our works section*/
+.objekt_description {
+    h3 {
+        color: $header-color;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    span {
+        color: $text-color;
+        font-size: 14px;
+    }
+}
+
+/*prices section*/
+.price_item {
+    h3 {
+        color: #1abc9c;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        text-transform: uppercase;
+    }
+    .float_price {
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+
+        .price {
+            color: $header-color;
+            font-weight: 700;
+        }
+    }
+    h4 {
+        color: $header-color;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+    ol {
+        color: $text-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}
+
+/*reviews section*/
+.reviews {
+    .headline {
+        h2 {
+            color: $main-light-color;
+            font-size: 40px;
+            font-weight: 300;
+            line-height: 28px;
+        }
+    }
+    .slick-slider-short-content {
+        p {
+            color: $main-light-color;
+            font-size: 16px;
+            line-height: 32px;
+        }
+        h5 {
+            color: $main-light-color;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h6 {
+            color: $main-light-color;
+            opacity: 0.5;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+.wpsisac-slick-slider.design-5 {
+    .slick-image-slide {
+        .slide-wrap {
+            .slick-slider-short-content {
+                p {
+                    text-align: center;
+                    font-size: 12px;
+                    @media screen and(min-width: 320px) {
+                        font-size: 14px;
+                    }
+                    @media screen and(min-width: 767px) {
+                        font-size: 16px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+/*faq section*/
+
+/*blog section in home page*/
+.date {
+    color: $text-color;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.article_home {
+    .read_more {
+        color: $accent-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+/*footer*/
+.copy_text {
+    opacity: 0.5;
+    color: $main-light-color;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+/*sidebar/resent post*/
+
+.recent-post {
+    h4 {
+        color: $header-color;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+}
+
+.related_list {
+    h4 {
+        font-size: 16px;
+    }
+}
+
+/*blog headline */
+.post_date {
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    .day {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+

@@ -1,0 +1,144 @@
+.widget-area {
+    width: 100%;
+    margin-top: 35px;
+    box-sizing: border-box;
+    @media screen and(min-width: 767px) {
+        width: 30%;
+        float: right;
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+    ul {
+        @include list-reset;
+    }
+}
+
+.widget {
+    margin-bottom: 30px;
+    h3 {
+        margin: 0 0 15px 0;
+    }
+}
+
+.wp-tag-cloud {
+    li {
+        margin: 0 5px 7px 0;
+        display: inline-block;
+
+        a {
+            @include link;
+            padding: 5px;
+            border: 1px solid $widget-color;
+            color: $widget-color;
+            &:hover,
+            &:focus,
+            &:active {
+                opacity: 0.7;
+                color: $accent-color;
+                border: 1px solid $accent-color;
+            }
+        }
+    }
+}
+
+.widget_archive {
+    li {
+        display: block;
+        border-bottom: 1px solid $widget-color;
+    }
+    a {
+        @include link;
+        padding: 15px 0;
+        color: $widget-color;
+        &:hover,
+        &:focus,
+        &:active {
+            opacity: 0.7;
+            color: $accent-color;
+        }
+    }
+}
+
+.recent-post {
+    padding: 20px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid $widget-color;
+    text-align: center;
+    &:last-of-type {
+        border: none;
+    }
+    @media screen and(min-width: 767px) {
+        text-align: inherit;
+    }
+
+    .recent-image {
+        margin-bottom: 10px;
+        width: 100%;
+        @media screen and(min-width: 430px) {
+            width: 40%;
+            object-fit: cover;
+            padding-right: 15px;
+            margin-bottom: 0;
+            box-sizing: border-box;
+            float: left;
+        }
+        @media screen and(min-width: 767px) {
+            width: 100%;
+            padding-right: 0;
+        }
+
+        @media screen and(min-width: 1119px) {
+            width: 40%;
+            object-fit: cover;
+            padding-right: 15px;
+            margin-bottom: 0;
+            box-sizing: border-box;
+            float: left;
+        }
+    }
+    .post-info {
+        @media screen and(min-width: 430px) {
+            width: 60%;
+            float: right;
+            text-align: left;
+        }
+        @media screen and(min-width: 767px) {
+            width: 100%;
+        }
+        @media screen and(min-width: 1119px) {
+            width: 60%;
+            float: right;
+        }
+    }
+    .post-date {
+        @media screen and(min-width: 430px) {
+            float: left;
+        }
+    }
+    .comments {
+        margin-left: 10px;
+        @media screen and(min-width: 430px) {
+            margin-left: 0;
+            float: right;
+        }
+    }
+
+    .title_float {
+        @media screen and(min-width: 430px) {
+            margin-bottom: 0;
+        }
+        a {
+            @include link;
+            display: inline;
+            color: $header-color;
+            &:hover,
+            &:focus,
+            &:active {
+                color: $accent-color;
+            }
+            &:visited {
+                color: $widget-color;
+            }
+        }
+    }
+}

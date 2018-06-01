@@ -1,0 +1,89 @@
+.contact_button,
+.read_all {
+    @include transition;
+    @include link;
+    color: $main-light-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 44px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    background-color: $accent-color;
+    padding: 0 34px;
+    box-sizing: border-box;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:focus {
+        opacity: 0.7;
+    }
+
+    &:visited {
+        opacity: 0.7;
+    }
+
+    @media screen and(min-width: 767px) {
+        font-size: 16px;
+        line-height: 48px;
+        padding: 0 45px;
+    }
+
+    @media screen and(min-width: 991px) {
+        font-size: 18px;
+        line-height: 55px;
+        padding: 0 50px;
+    }
+}
+
+.price_item {
+    a.contact_button {
+        @include link;
+        font-size: 18px;
+        background-color: $button-background-color;
+        line-height: 55px;
+        padding: 0 70px;
+    }
+}
+
+
+.read_all {
+    padding: 0 35px;
+}
+
+.contact_us {
+    @include transition;
+    display: inline-block;
+    color: $accent-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+    padding: 0 40px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid $accent-color;
+
+    @media screen and(min-width: 767px) {
+        font-size: 16px;
+        line-height: 48px;
+        padding: 0 40px;
+    }
+
+    @media screen and(min-width: 991px) {
+
+    }
+    @media screen and(min-width: 1200px) {
+        font-size: 18px;
+        line-height: 55px;
+        padding: 0 60px;
+    }
+
+    &:hover,
+    &:focus {
+        color: $main-light-color;
+        background-color: $accent-color;
+        opacity: 0.9;
+    }
+}
